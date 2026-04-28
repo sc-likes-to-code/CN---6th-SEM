@@ -122,3 +122,44 @@ int main() {
 
     return 0;
 }
+
+/*
+Output 1: 
+
+===== CRC Menu =====
+1. CRC Generation (Sender)
+2. CRC Checking (Receiver)
+3. Exit
+Enter your choice: 1
+
+Enter Data (binary): 1101
+Enter Divisor (binary): 1011
+
+CRC Remainder: 001
+Transmitted Data: 1101001
+
+===== CRC Menu =====
+1. CRC Generation (Sender)
+2. CRC Checking (Receiver)
+3. Exit
+Enter your choice: 2
+
+Enter Received Data (binary): 1101001
+Enter Divisor (binary): 1011
+
+No error detected. Data is correct.
+
+Output 2:
+
+===== CRC Menu =====
+1. CRC Generation (Sender)
+2. CRC Checking (Receiver)
+3. Exit
+Enter your choice: 2
+
+Enter Received Data (binary): 1101011
+Enter Divisor (binary): 1011
+
+Error detected in received data!
+
+*/
